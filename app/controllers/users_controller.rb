@@ -32,7 +32,7 @@ class UsersController < ApplicationController
 
     if @the_user.valid?
       @the_user.save
-      redirect_to("/users/#{@the_user.id}", { :notice => "user updated successfully."} )
+      redirect_to("/users/#{@the_user.username}", { :notice => "user updated successfully."} )
     else
       redirect_to("/users/#{@the_user.id}", { :alert => "user failed to update successfully." })
     end

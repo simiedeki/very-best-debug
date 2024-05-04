@@ -11,5 +11,5 @@ post("/add_user", { :controller => "users", :action => "create" })
 post("/insert_venue_record", { :controller => "venues", :action => "create" })
 post("/update_user/:path_id", { :controller => "users", :action => "update" })
 post("/update_venue/:path_id", { :controller => "venues", :action => "update" })
+post '/insert_comment_record', to: 'comments#create'
 end
-
